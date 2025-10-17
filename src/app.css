@@ -1,0 +1,360 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@import 'tailwindcss';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-svelte';
+@import '@skeletonlabs/skeleton/themes/cerberus';
+
+/* Register a Custom Themes */
+/* Make sure to resolve the relative path. */
+/* Note the .css extension is optional. */
+@import '../sat.css';
+
+@import '@fontsource/noto-sans';
+
+[data-theme='sat'] {
+	--heading-font-family: 'Noto Sans', sans-serif;
+	--base-font-family: 'Noto Sans', sans-serif;
+	--anchor-font-family: 'inherit';
+}
+
+@import '@fontsource/noto-sans';
+
+/* Mobile-first CSS Reset and Base Styles */
+html {
+	@apply h-full;
+	/* Prevent horizontal scrolling on mobile */
+	overflow-x: hidden;
+	/* Better text rendering on mobile */
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	@apply h-full bg-white;
+	/* Prevent horizontal scrolling */
+	overflow-x: hidden;
+	/* Smooth scrolling for mobile */
+	-webkit-overflow-scrolling: touch;
+	/* Remove default margins/padding */
+	margin: 0;
+	padding: 0;
+	/* Optimize font rendering for mobile */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile-first base styles for iframes */
+iframe.pie,
+iframe.sat-header {
+	width: 100%;
+	border: 0;
+	display: block;
+	/* Prevent iframe scrolling issues on mobile */
+	overflow: hidden;
+	/* Ensure proper touch behavior */
+	touch-action: manipulation;
+}
+
+/* Mobile-first header iframe */
+iframe.sat-header {
+	/* Mobile height - will be overridden by media queries */
+	height: 120px;
+}
+
+/* Responsive header heights */
+@media (min-width: 768px) {
+	iframe.sat-header {
+		height: 140px;
+	}
+}
+
+@media (min-width: 1024px) {
+	iframe.sat-header {
+		height: 160px;
+	}
+}
+
+/* Reglas provistas para el FOOTER (.pie) */
+@media (min-width: 1501px) and (max-width: 2300px) {
+	iframe.pie {
+		height: 860px;
+	}
+}
+@media (min-width: 1440px) and (max-width: 2560px) {
+	iframe.pie {
+		height: 860px;
+	}
+}
+@media (min-width: 1301px) and (max-width: 1500px) {
+	iframe.pie {
+		height: 835px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+	iframe.pie {
+		height: 835px;
+	}
+}
+@media (min-width: 1200px) {
+	iframe.pie {
+		height: 825px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	iframe.pie {
+		height: 840px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	iframe.pie {
+		height: 820px;
+	}
+}
+@media (max-width: 767px) {
+	iframe.pie {
+		height: 820px;
+	}
+}
+@media (max-width: 480px) {
+	iframe.pie {
+		height: 1920px;
+	}
+}
+
+/* Mobile-first utility classes */
+.mobile-container {
+	@apply mx-auto max-w-screen-sm px-4;
+	/* Ensure safe area on mobile devices */
+	padding-left: max(1rem, env(safe-area-inset-left));
+	padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+@media (min-width: 768px) {
+	.mobile-container {
+		@apply max-w-screen-md px-6;
+	}
+}
+
+@media (min-width: 1024px) {
+	.mobile-container {
+		@apply max-w-screen-lg px-8;
+	}
+}
+
+@media (min-width: 1280px) {
+	.mobile-container {
+		@apply max-w-screen-xl px-8;
+	}
+}
+
+/* Mobile-first touch targets and interactions */
+.touch-target {
+	min-height: 44px;
+	min-width: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Improve touch responsiveness */
+	touch-action: manipulation;
+	/* Add subtle hover/focus states for better UX */
+	transition:
+		transform 0.15s ease-in-out,
+		opacity 0.15s ease-in-out;
+}
+
+.touch-target:hover {
+	transform: scale(1.02);
+}
+
+.touch-target:active {
+	transform: scale(0.98);
+	opacity: 0.8;
+}
+
+/* Mobile-specific button styles */
+.mobile-button {
+	/* Include touch-target styles directly */
+	min-height: 44px;
+	min-width: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	touch-action: manipulation;
+	transition:
+		transform 0.15s ease-in-out,
+		opacity 0.15s ease-in-out;
+	/* Button-specific styles */
+	@apply rounded-lg px-6 py-3 font-medium;
+	@apply bg-blue-600 text-white;
+	@apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+	border: none;
+	cursor: pointer;
+}
+
+.mobile-button:hover {
+	@apply bg-blue-700;
+}
+
+.mobile-button:active {
+	@apply bg-blue-800;
+}
+
+.mobile-button:disabled {
+	@apply cursor-not-allowed bg-gray-400;
+	transform: none;
+	opacity: 0.6;
+}
+
+/* Mobile-first form inputs */
+.mobile-input {
+	@apply w-full rounded-lg border border-gray-300 px-4 py-3 text-base;
+	@apply focus:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500;
+	touch-action: manipulation;
+	/* Prevent zoom on iOS */
+	font-size: 16px;
+}
+
+@media (min-width: 768px) {
+	.mobile-input {
+		@apply text-sm;
+		font-size: 14px;
+	}
+}
+
+/* Mobile-first text sizing */
+.mobile-text-sm {
+	@apply text-sm;
+}
+
+@media (min-width: 768px) {
+	.mobile-text-sm {
+		@apply text-base;
+	}
+}
+
+.mobile-text-base {
+	@apply text-base;
+}
+
+@media (min-width: 768px) {
+	.mobile-text-base {
+		@apply text-lg;
+	}
+}
+
+.mobile-text-lg {
+	@apply text-lg;
+}
+
+@media (min-width: 768px) {
+	.mobile-text-lg {
+		@apply text-xl;
+	}
+}
+
+/* Mobile-first spacing */
+.mobile-spacing {
+	@apply space-y-4;
+}
+
+@media (min-width: 768px) {
+	.mobile-spacing {
+		@apply space-y-6;
+	}
+}
+
+@media (min-width: 1024px) {
+	.mobile-spacing {
+		@apply space-y-8;
+	}
+}
+
+/* Mobile-first loading states */
+.mobile-loading {
+	@apply flex items-center justify-center p-4;
+}
+
+.mobile-loading::after {
+	content: '';
+	width: 20px;
+	height: 20px;
+	border: 2px solid #e5e7eb;
+	border-top: 2px solid #3b82f6;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	margin-left: 8px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Mobile-first error states */
+.mobile-error {
+	@apply rounded-lg border border-red-200 bg-red-50 p-4 text-red-800;
+}
+
+/* Mobile-first success states */
+.mobile-success {
+	@apply rounded-lg border border-green-200 bg-green-50 p-4 text-green-800;
+}
+
+/* Prevent text selection on touch targets */
+.touch-target,
+.mobile-button {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+/* Improve tap highlight on mobile */
+* {
+	-webkit-tap-highlight-color: rgba(59, 130, 246, 0.1);
+}
+
+/* Mobile-first focus management */
+@media (max-width: 767px) {
+	/* Remove focus outlines on mobile for better UX */
+	*:focus {
+		outline: none;
+	}
+
+	/* But keep them for keyboard navigation */
+	*:focus-visible {
+		outline: 2px solid #3b82f6;
+		outline-offset: 2px;
+	}
+}
+
+/* Responsive images */
+.mobile-image {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Mobile-first safe areas for notched devices */
+.mobile-safe-top {
+	padding-top: env(safe-area-inset-top);
+}
+
+.mobile-safe-bottom {
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
+.mobile-safe-left {
+	padding-left: env(safe-area-inset-left);
+}
+
+.mobile-safe-right {
+	padding-right: env(safe-area-inset-right);
+}
