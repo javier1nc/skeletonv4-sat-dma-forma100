@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon-sat.ico';
 
 	import Header from '../lib/components/Layout/Header.svelte';
 	import Footer from '../lib/components/Layout/Footer.svelte';
@@ -16,6 +16,7 @@
 <div class="grid min-h-dvh grid-rows-[auto_minmax(0,1fr)_auto] overflow-x-hidden">
 	<!-- Header (responsive across all screen sizes) -->
 	<Header />
+	<div class="m-0 flex min-h-[3rem] flex-row justify-between bg-surface-800 px-4 sm:px-6"></div>
 
 	<!-- Main content area with mobile-first responsive design -->
 	<div class="w-full overflow-x-hidden">
