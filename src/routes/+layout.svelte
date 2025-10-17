@@ -4,6 +4,7 @@
 
 	import { CalendarIcon, CircleUserIcon, MenuIcon, SearchIcon } from '@lucide/svelte';
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
+	import { Popover, Portal } from '@skeletonlabs/skeleton-svelte';
 
 	import Header from '../lib/components/Layout/Header.svelte';
 	import Footer from '../lib/components/Layout/Footer.svelte';
@@ -22,9 +23,58 @@
 
 	<AppBar class="-mt-[6rem] bg-[#611232] ">
 		<AppBar.Toolbar class="grid-cols-[1fr_2fr_1fr] ">
-			<AppBar.Lead>
-				<button type="button" class="btn-icon btn-icon-lg hover:preset-tonal"><MenuIcon /></button>
-			</AppBar.Lead>
+			<div class="flex items-center">
+				<AppBar.Lead>
+					<Popover>
+						<Popover.Trigger class="btn-filled btn font-bold hover:preset-tonal"
+							>Presentar declaracion</Popover.Trigger
+						>
+						<Portal>
+							<Popover.Positioner>
+								<Popover.Content
+									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
+								>
+									<Popover.CloseTrigger class="btn preset-tonal font-bold"
+										>Declaracion de pago</Popover.CloseTrigger
+									>
+									<Popover.CloseTrigger class="btn preset-tonal font-bold"
+										>Aviso</Popover.CloseTrigger
+									>
+								</Popover.Content>
+							</Popover.Positioner>
+						</Portal>
+					</Popover>
+				</AppBar.Lead>
+
+				<AppBar.Lead>
+					<Popover>
+						<Popover.Trigger class="btn-filled btn font-bold hover:preset-tonal"
+							>Consultas</Popover.Trigger
+						>
+						<Portal>
+							<Popover.Positioner>
+								<Popover.Content
+									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
+								>
+									<Popover.CloseTrigger class="btn preset-tonal"
+										>De la declaracion</Popover.CloseTrigger
+									>
+									<Popover.CloseTrigger class="btn preset-tonal"
+										>Por obligacion</Popover.CloseTrigger
+									>
+									<Popover.CloseTrigger class="btn preset-tonal"
+										>Declaraciones pagadas</Popover.CloseTrigger
+									>
+									<Popover.CloseTrigger class="btn preset-tonal"
+										>Acuse de recibo de la declaracion</Popover.CloseTrigger
+									>
+								</Popover.Content>
+							</Popover.Positioner>
+						</Portal>
+					</Popover>
+				</AppBar.Lead>
+			</div>
+
 			<AppBar.Headline class="flex justify-center">
 				<p>Headline</p>
 			</AppBar.Headline>
