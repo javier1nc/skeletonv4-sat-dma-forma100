@@ -27,7 +27,7 @@
 				<AppBar.Lead>
 					<Popover>
 						<Popover.Trigger class="btn-filled btn font-bold hover:preset-tonal"
-							>Presentar declaracion</Popover.Trigger
+							>Presentar declaración</Popover.Trigger
 						>
 						<Portal>
 							<Popover.Positioner>
@@ -57,7 +57,7 @@
 									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
 								>
 									<Popover.CloseTrigger class="btn preset-tonal"
-										>De la declaracion</Popover.CloseTrigger
+										>De la declaración</Popover.CloseTrigger
 									>
 									<Popover.CloseTrigger class="btn preset-tonal"
 										>Por obligacion</Popover.CloseTrigger
@@ -66,7 +66,7 @@
 										>Declaraciones pagadas</Popover.CloseTrigger
 									>
 									<Popover.CloseTrigger class="btn preset-tonal"
-										>Acuse de recibo de la declaracion</Popover.CloseTrigger
+										>Acuse de recibo de la declaración</Popover.CloseTrigger
 									>
 								</Popover.Content>
 							</Popover.Positioner>
@@ -76,7 +76,7 @@
 			</div>
 
 			<AppBar.Headline class="flex justify-center">
-				<p>Headline</p>
+				<p>Declaración del ISR por ingresos de invensciones en el extranjero retonadas al país</p>
 			</AppBar.Headline>
 			<AppBar.Trail class="justify-end">
 				<button type="button" class="btn-icon hover:preset-tonal"
