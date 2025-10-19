@@ -21,8 +21,8 @@
 	<!-- Header (responsive across all screen sizes) -->
 	<Header />
 
-	<AppBar class="-mt-[6rem] bg-[#611232] ">
-		<AppBar.Toolbar class="grid-cols-[1fr_2fr_1fr] ">
+	<AppBar class="-mt-[6rem] bg-[#611232] flex w-full">
+		<AppBar.Toolbar class="grid-cols-[1fr_2fr_1fr]">
 			<div class="flex items-center">
 				<AppBar.Lead>
 					<Popover>
@@ -79,15 +79,35 @@
 				<p>Declaración del ISR por ingresos de invensciones en el extranjero retonadas al país</p>
 			</AppBar.Headline>
 			<AppBar.Trail class="justify-end">
+
+				<!-- 
 				<button type="button" class="btn-icon hover:preset-tonal"
 					><SearchIcon class="size-6" /></button
 				>
 				<button type="button" class="btn-icon hover:preset-tonal"
 					><CalendarIcon class="size-6" /></button
 				>
-				<button type="button" class="btn-icon hover:preset-tonal"
-					><CircleUserIcon class="size-6" /></button
-				>
+				-->
+				
+				<Popover>
+					<Popover.Trigger class="btn-filled btn-icon font-bold hover:preset-tonal"
+						><CircleUserIcon class="size-6" /></Popover.Trigger
+					>
+					<Portal>
+						<Popover.Positioner>
+							<Popover.Content
+								class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
+							>
+								<Popover.CloseTrigger class="btn preset-tonal font-bold"
+									>Perfil</Popover.CloseTrigger
+								>
+								<Popover.CloseTrigger class="btn preset-tonal font-bold"
+									>Cerrar sesión</Popover.CloseTrigger
+								>
+							</Popover.Content>
+						</Popover.Positioner>
+					</Portal>
+				</Popover>
 			</AppBar.Trail>
 		</AppBar.Toolbar>
 	</AppBar>
