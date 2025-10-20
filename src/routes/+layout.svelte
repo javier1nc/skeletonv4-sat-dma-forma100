@@ -22,7 +22,7 @@
 	<Header />
 
 	<AppBar class="-mt-[6rem] bg-[#611232] flex w-full ">
-		<AppBar.Toolbar class="grid-cols-[1fr_2fr_1fr]">
+		<AppBar.Toolbar class="grid-cols-[2fr_2fr_2fr]">
 			<div class="flex items-center ">
 				<AppBar.Lead>
 					<Popover>
@@ -120,7 +120,7 @@
 		<div class="mobile-container ">
 			<!-- Single column on mobile, progressive layout on larger screens -->
 			<div
-				class="grid grid-cols-1 gap-2 sm:gap-4 lg:gap-6 xl:grid-cols-[200px_minmax(0,1fr)_200px]"
+				class="grid grid-cols-1 gap-2 sm:gap-4 lg:gap-6 xl:grid-cols-[100px_minmax(0,1fr)_100px]"
 			>
 				<!-- Left sidebar - hidden on mobile, visible on xl+ -->
 				<aside class="hidden xl:sticky xl:top-4 xl:block xl:self-start">

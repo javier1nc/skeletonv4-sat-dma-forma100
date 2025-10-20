@@ -94,7 +94,7 @@
 						<label class="label flex justify-between items-center gap-4">
 							<span class="w-6/12">Impuesto acreditable pagado en el extranjero</span>
 							<span class="w-1/12 flex items-center justify-center">(=)</span>
-							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
+							<input class="input w-5/12 bg-red-100 text-black" type="text" placeholder="Capturar" readonly/>
 						</label>
 
 						<label class="label flex justify-between items-center gap-4">
@@ -115,7 +115,57 @@
 			
 		</div>
 	</Tabs.Content>
-	<Tabs.Content value="tab-2">Content for Tab 2</Tabs.Content>
+
+
+	<Tabs.Content value="tab-2">
+		<div class="w-full space-y-4">
+			<span class="text-sm">Los campos marcados con asterisco (*) son obligatorios</span>
+
+			<div class="w-full space-y-4 ">
+				<div class="flex justify-between items-center gap-4">
+					<!-- A standard button -->
+					<div class="mt-8 w-full flex flex-col gap-2">
+
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12 font-bold">A cargo</span>
+							<span class="w-1/12 flex items-center justify-center"></span>
+							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12 font-bold">Total contribuciones</span>
+							<span class="w-1/12 flex items-center justify-center"></span>
+							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
+						</label>
+
+						<hr class="hr my-8 border-gray-400" />
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">Total contribuciones</span>
+							<span class="w-1/12 flex items-center justify-center">(=)</span>
+							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">Cantidad a cargo</span>
+							<span class="w-1/12 flex items-center justify-center"></span>
+							<input class="input w-5/12 bg-gray-200 text-end" type="text" placeholder="" readonly/>
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12 font-bold">Cantidad a pagar</span>
+							<span class="w-1/12 flex items-center justify-center"></span>
+							<input class="input w-5/12 bg-gray-200 text-end" type="text" placeholder="" readonly/>
+						</label>
+
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+	</Tabs.Content>
 	</Tabs>
 
 </main>
