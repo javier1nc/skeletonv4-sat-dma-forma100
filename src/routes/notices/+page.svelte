@@ -28,42 +28,41 @@
 
 	<Tabs.Content value="tab-1">
 		<div class="w-full space-y-4">
-			<span class="text-sm">Los campos marcados con asterisco (*) son obligatorios</span>
-
 			<div class="w-full space-y-4 ">
 				<div class="flex justify-between items-center gap-4">
 					<!-- A standard button -->
-					<div class="mt-8 w-full flex flex-row gap-8">
-
-
-						<div class="w-1/2">
-							<label class="label flex justify-between items-center gap-4">
-								<span class="w-6/12">A cargo</span>
-								<input class="input w-6/12 bg-gray-200" type="text" placeholder="" readonly/>
+					<div class="mt-4 w-full flex flex-col gap-4">
+						<div class="flex flex-row gap-4">
+							<label class="w-1/2 label flex justify-between items-center gap-4">
+								<span class="w-6/12">No. de operación de la declaración del ISR pagado</span>
+								<input class="input w-6/12 " type="text" placeholder="" />
 							</label>
 
-							<label class="label flex justify-between items-center gap-4">
-								<span class="w-6/12">Total contribuciones</span>
-								<input class="input w-6/12 bg-gray-200" type="text" placeholder="" readonly/>
+							<label class="w-1/2 label flex justify-between items-center gap-4">
+								<span class="w-6/12">Fecha del retorno</span>
+								<input class="input w-6/12 " type="text" placeholder="" />
 							</label>
 						</div>
 
-						<div class="w-1/2">
-							<label class="label flex justify-between items-center gap-4">
-									<span class="w-6/12">Total contribuciones</span>
-								<input class="input w-6/12 bg-gray-200" type="text" placeholder="" readonly/>
+						<div class="flex flex-row gap-4">
+							<label class="w-1/2 label flex justify-between items-center gap-4">
+								<span class="w-6/12">País de origen de los recursos repatriados</span>
+								<select class="select w-6/12">
+									<option value="1">País 1</option>
+									<option value="2">País 2</option>
+									<option value="3">País 3</option>
+									<option value="4">País 4</option>
+									<option value="5">País 5</option>
+								</select>
 							</label>
 
-							<label class="label flex justify-between items-center gap-4">
-								<span class="w-6/12">Cantidad a cargo</span>
-								<input class="input w-6/12 bg-gray-200 text-end" type="text" placeholder="" readonly/>
+							<label class="w-1/2 label flex justify-between items-center gap-4">
+								<span class="w-6/12">Entidad</span>
+								<input class="input w-6/12 " type="text" placeholder=""/>
 							</label>
+						</div>
 
-							<label class="label flex justify-between items-center gap-4">
-								<span class="w-6/12">Cantidad a pagar</span>
-								<input class="input w-6/12 bg-gray-200 text-end" type="text" placeholder="" readonly/>
-							</label>
-						</div>	
+
 
 					</div>
 				</div>
