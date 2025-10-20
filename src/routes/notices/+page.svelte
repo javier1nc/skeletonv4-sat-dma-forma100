@@ -68,6 +68,104 @@
 									<input class="input w-6/12" type="text" placeholder="" />
 								</label>
 							</div>
+
+							<div class="flex flex-row gap-4">
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12">¿Cuentas con tratado para intercambio?</span>
+									<select class="select w-6/12">
+										<option value="1">Sí</option>
+										<option value="2">No</option>
+									</select>
+								</label>
+
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12">Origen del recurso</span>
+									<select class="select w-6/12">
+										<option value="1">Origen 1</option>
+										<option value="2">Origen 2</option>
+										<option value="3">Origen 3</option>
+										<option value="4">Origen 4</option>
+										<option value="5">Origen 5</option>
+									</select>
+								</label>
+							</div>
+
+							<div class="flex flex-row gap-4">
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12">Monto total de la inversión que</span>
+									<input class="input w-6/12" type="text" placeholder="" />
+								</label>
+
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12"
+										>No. de cuenta, contrato o fideicomiso de donde provienen los recursos</span
+									>
+									<input class="input w-6/12" type="text" placeholder="" />
+								</label>
+							</div>
+
+							<div class="flex flex-row gap-4">
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12"
+										>Institución de Crédito o Casa del Bolsa en la que se retornó la inversión</span
+									>
+									<select class="select w-6/12">
+										<option value="1">Institución 1</option>
+										<option value="2">Institución 2</option>
+										<option value="3">Institución 3</option>
+										<option value="4">Institución 4</option>
+										<option value="5">Institución 5</option>
+									</select>
+								</label>
+
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12">No. cuenta o inversión en la que se retornó</span>
+									<input class="input w-6/12" type="text" placeholder="" />
+								</label>
+							</div>
+
+							<div class="flex flex-row gap-4">
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12">Monto en moneda extranjera</span>
+									<input class="input w-6/12" type="text" placeholder="" />
+								</label>
+
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12">Tipo de moneda que se retorna</span>
+									<select class="select w-6/12">
+										<option value="1">Moneda 1</option>
+										<option value="2">Moneda 2</option>
+										<option value="3">Moneda 3</option>
+										<option value="4">Moneda 4</option>
+										<option value="5">Moneda 5</option>
+									</select>
+								</label>
+							</div>
+
+							<div class="flex flex-row gap-4">
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12">Tipo de moneda recibida</span>
+									<select class="select w-6/12">
+										<option value="1">Moneda 1</option>
+										<option value="2">Moneda 2</option>
+										<option value="3">Moneda 3</option>
+										<option value="4">Moneda 4</option>
+										<option value="5">Moneda 5</option>
+									</select>
+								</label>
+
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12">Tipo de cambio aplicado</span>
+									<input class="input w-6/12" type="text" placeholder="" />
+								</label>
+							</div>
+
+							<div class="flex flex-row gap-4">
+								<label class="label flex w-1/2 items-center justify-between gap-4">
+									<span class="w-6/12">Monto de las comisiones cobradas</span>
+									<input class="input w-6/12" type="text" placeholder="" />
+								</label>
+							</div>
 						</div>
 					</div>
 				</div>

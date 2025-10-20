@@ -26,7 +26,7 @@
 					<a
 						type="button"
 						class="btn border-2 border-[#9b2247] preset-filled text-[#9b2247] hover:bg-[#9b2247] hover:text-white"
-						href="/about">Guardar</a
+						href="{PUBLIC_BASE_PATH}/">Guardar</a
 					>
 				</div>
 			</div>
