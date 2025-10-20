@@ -17,13 +17,13 @@
 </svelte:head>
 
 <!-- Mobile-first layout with proper viewport handling -->
-<div class="grid min-h-dvh grid-rows-[auto_minmax(0,1fr)_auto] overflow-x-hidden">
+<div class="grid min-h-dvh grid-rows-[auto_minmax(0,1fr)_auto] overflow-x-hidden ">
 	<!-- Header (responsive across all screen sizes) -->
 	<Header />
 
-	<AppBar class="-mt-[6rem] bg-[#611232] flex w-full">
+	<AppBar class="-mt-[6rem] bg-[#611232] flex w-full ">
 		<AppBar.Toolbar class="grid-cols-[1fr_2fr_1fr]">
-			<div class="flex items-center">
+			<div class="flex items-center ">
 				<AppBar.Lead>
 					<Popover>
 						<Popover.Trigger class="btn-filled btn font-bold hover:preset-tonal"
@@ -34,12 +34,14 @@
 								<Popover.Content
 									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
 								>
-									<Popover.CloseTrigger class="btn preset-tonal font-bold"
-										>Declaracion de pago</Popover.CloseTrigger
-									>
-									<Popover.CloseTrigger class="btn preset-tonal font-bold"
-										>Aviso</Popover.CloseTrigger
-									>
+								<a href="/payment">
+									<Popover.CloseTrigger class="btn preset-tonal font-bold">
+										Declaracion de pago
+									</Popover.CloseTrigger>
+								</a>
+
+								<a href="/payment"><Popover.CloseTrigger class="btn preset-tonal font-bold"
+										>Aviso</Popover.CloseTrigger></a>
 								</Popover.Content>
 							</Popover.Positioner>
 						</Portal>
@@ -76,7 +78,7 @@
 			</div>
 
 			<AppBar.Headline class="flex justify-center">
-				<p>Declaración del ISR por ingresos de invensciones en el extranjero retonadas al país</p>
+			<a href="/"><p>Declaración del ISR por ingresos de invensciones en el extranjero retonadas al país</p></a>
 			</AppBar.Headline>
 			<AppBar.Trail class="justify-end">
 
@@ -115,7 +117,7 @@
 	<!-- Main content area with mobile-first responsive design -->
 	<div class="w-full overflow-x-hidden">
 		<!-- Mobile-first container with progressive enhancement -->
-		<div class="mobile-container">
+		<div class="mobile-container ">
 			<!-- Single column on mobile, progressive layout on larger screens -->
 			<div
 				class="grid grid-cols-1 gap-2 sm:gap-4 lg:gap-6 xl:grid-cols-[200px_minmax(0,1fr)_200px]"
@@ -126,7 +128,7 @@
 				</aside>
 
 				<!-- Main content area with mobile-optimized spacing -->
-				<main class="mobile-spacing min-h-0 bg-transparent py-2 sm:py-4 lg:py-6">
+				<main class="mobile-spacing min-h-0 bg-transparent py-2 sm:py-4 lg:py-6 h-[calc(100vh-6rem)]">
 					{@render children?.()}
 				</main>
 
