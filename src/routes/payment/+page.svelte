@@ -143,7 +143,7 @@
 
 						<label class="label flex justify-between items-center gap-4">
 							<span class="w-6/12">Total contribuciones</span>
-							<span class="w-1/12 flex items-center justify-center">(=)</span>
+							<span class="w-1/12 flex items-center justify-center"></span>
 							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
 						</label>
 
