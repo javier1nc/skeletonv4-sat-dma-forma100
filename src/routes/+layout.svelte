@@ -34,9 +34,9 @@
 								<Popover.Content
 									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
 								>
-								<a class="btn preset-tonal font-bold" href="/payment">Declaracion de pago</a>
+									<a class="btn preset-tonal font-bold" href="/payment">Declaracion de pago</a>
 
-								<a class="btn preset-tonal font-bold" href="/notices">Aviso</a>
+									<a class="btn preset-tonal font-bold" href="/notices">Aviso</a>
 								</Popover.Content>
 							</Popover.Positioner>
 						</Portal>
