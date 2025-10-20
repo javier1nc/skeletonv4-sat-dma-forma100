@@ -3,6 +3,7 @@
 	import favicon from '$lib/assets/favicon-sat.ico';
 
 	import { PUBLIC_BASE_PATH } from '$env/static/public';
+	import { PUBLIC_APP_VERSION } from '$env/static/public';
 
 	import { CalendarIcon, CircleUserIcon, MenuIcon, SearchIcon } from '@lucide/svelte';
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
@@ -24,7 +25,7 @@
 	<Header />
 
 	<AppBar class="-mt-[6rem] flex w-full bg-[#611232] ">
-		<AppBar.Toolbar class="grid-cols-[2fr_2fr_2fr]">
+		<AppBar.Toolbar class="grid-cols-[2fr_3fr_1fr_1fr]">
 			<div class="flex items-center">
 				<AppBar.Lead>
 					<Popover>
@@ -36,7 +37,7 @@
 								<Popover.Content
 									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
 								>
-									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
+									<a class="btn preset-tonal font-bold" href={PUBLIC_BASE_PATH}
 										>Declaracion de pago</a
 									>
 
@@ -57,19 +58,21 @@
 								<Popover.Content
 									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
 								>
-									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
+									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/from-statement"
 										>De la declaración</a
 									>
 
-									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
+									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/by-obligation"
 										>Por obligacion</a
 									>
 
-									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
+									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/statement"
 										>Declaraciones pagadas</a
 									>
 
-									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
+									<a
+										class="btn preset-tonal font-bold"
+										href="{PUBLIC_BASE_PATH}/receipt-declaration"
 										>Acuse de recibo de la declaración</a
 									>
 								</Popover.Content>
@@ -86,6 +89,11 @@
 					</p></a
 				>
 			</AppBar.Headline>
+
+			<AppBar.Headline class="flex justify-center">
+				<p>v{PUBLIC_APP_VERSION}</p>
+			</AppBar.Headline>
+
 			<AppBar.Trail class="justify-end">
 				<!-- 
 				<button type="button" class="btn-icon hover:preset-tonal"
