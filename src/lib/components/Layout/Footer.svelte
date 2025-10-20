@@ -9,4 +9,6 @@
   loading="lazy"
   src={src}
   referrerpolicy="no-referrer-when-downgrade"
+  scrolling="no"
+  style="overflow: hidden;"
 ></iframe>

@@ -36,7 +36,7 @@
 			<div class="w-full space-y-4 ">
 				<div class="flex justify-between items-center gap-4">
 					<!-- A standard button -->
-					<div class="mt-8 w-full flex flex-col gap-2">
+					<div class="mt-8 w-full flex flex-col gap-1">
 						<label class="label flex justify-between items-center gap-4">
 							<span class="w-6/12">* Institución de crédito o casa de bolsa en la que se retorna la inversión</span>
 							<span class="w-1/12 flex items-center justify-center"></span>
@@ -59,6 +59,54 @@
 							<span class="w-6/12">* Monto total de la inversión que retorna</span>
 							<span class="w-1/12 flex items-center justify-center">(-)</span>
 							<input class="input w-5/12" type="text" placeholder="" />
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">* Monto de la inversión que retorna, exento del pago de Impuesto Sobre la Renta</span>
+							<span class="w-1/12 flex items-center justify-center">(-)</span>
+							<input class="input w-5/12" type="text" placeholder="" />
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">* Monto de la inversión que retorna, por el cual no se ha pagado el Impuesto Sobre la Renta</span>
+							<span class="w-1/12 flex items-center justify-center">(=)</span>
+							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">Base gravable</span>
+							<span class="w-1/12 flex items-center justify-center"></span>
+							<input class="input w-5/12 bg-gray-200 text-end" type="text" placeholder="" readonly/>
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">Tasa %</span>
+							<span class="w-1/12 flex items-center justify-center"></span>
+							<input class="input w-5/12 bg-gray-200 text-end" type="text" placeholder="15" readonly/>
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">Impuesto determinado</span>
+							<span class="w-1/12 flex items-center justify-center">(=)</span>
+							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">Impuesto acreditable pagado en el extranjero</span>
+							<span class="w-1/12 flex items-center justify-center">(=)</span>
+							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">Fecha de pago</span>
+							<span class="w-1/12 flex items-center justify-center"></span>
+							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
+						</label>
+
+						<label class="label flex justify-between items-center gap-4">
+							<span class="w-6/12">A cargo</span>
+							<span class="w-1/12 flex items-center justify-center"></span>
+							<input class="input w-5/12 bg-gray-200" type="text" placeholder="" readonly/>
 						</label>
 					</div>
 				</div>
