@@ -34,14 +34,9 @@
 								<Popover.Content
 									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
 								>
-								<a href="/payment">
-									<Popover.CloseTrigger class="btn preset-tonal font-bold">
-										Declaracion de pago
-									</Popover.CloseTrigger>
-								</a>
+								<a class="btn preset-tonal font-bold" href="/payment">Declaracion de pago</a>
 
-								<a href="/payment"><Popover.CloseTrigger class="btn preset-tonal font-bold"
-										>Aviso</Popover.CloseTrigger></a>
+								<a class="btn preset-tonal font-bold" href="/notices">Aviso</a>
 								</Popover.Content>
 							</Popover.Positioner>
 						</Portal>
