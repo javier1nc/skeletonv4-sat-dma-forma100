@@ -186,6 +186,17 @@
 							</label>
 
 							<label class="label flex items-center justify-between gap-4">
+								<span class="w-6/12">Monto a pagar con anterioridad</span>
+								<span class="flex w-1/12 items-center justify-center"></span>
+								<input
+									class="input w-5/12 bg-gray-200 text-end"
+									type="text"
+									placeholder=""
+									readonly
+								/>
+							</label>
+
+							<label class="label flex items-center justify-between gap-4">
 								<span class="w-6/12 font-bold">Cantidad a pagar</span>
 								<span class="flex w-1/12 items-center justify-center"></span>
 								<input

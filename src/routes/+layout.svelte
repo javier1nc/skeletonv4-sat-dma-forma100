@@ -57,17 +57,20 @@
 								<Popover.Content
 									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
 								>
-									<Popover.CloseTrigger class="btn preset-tonal"
-										>De la declaración</Popover.CloseTrigger
+									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
+										>De la declaración</a
 									>
-									<Popover.CloseTrigger class="btn preset-tonal"
-										>Por obligacion</Popover.CloseTrigger
+
+									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
+										>Por obligacion</a
 									>
-									<Popover.CloseTrigger class="btn preset-tonal"
-										>Declaraciones pagadas</Popover.CloseTrigger
+
+									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
+										>Declaraciones pagadas</a
 									>
-									<Popover.CloseTrigger class="btn preset-tonal"
-										>Acuse de recibo de la declaración</Popover.CloseTrigger
+
+									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
+										>Acuse de recibo de la declaración</a
 									>
 								</Popover.Content>
 							</Popover.Positioner>
