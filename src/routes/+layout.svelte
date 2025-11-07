@@ -83,7 +83,7 @@
 			</div>
 
 			<AppBar.Headline class="flex justify-center">
-				<a href="/"
+				<a href="{PUBLIC_BASE_PATH}/notices"
 					><p>
 						Declaración del ISR por ingresos de invensciones en el extranjero retonadas al país
 					</p></a
