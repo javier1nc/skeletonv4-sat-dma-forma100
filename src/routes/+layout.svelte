@@ -37,7 +37,7 @@
 								<Popover.Content
 									class="flex max-w-md flex-col space-y-2 card bg-[#9b2247] p-4 shadow-xl"
 								>
-									<a class="btn preset-tonal font-bold" href={PUBLIC_BASE_PATH}
+									<a class="btn preset-tonal font-bold" href="{PUBLIC_BASE_PATH}/payment"
 										>Declaracion de pago</a
 									>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let src = 'https://repositorio.cloudb.sat.gob.mx/FTP/lineagrafica/header/header.html';
+	export let src = 'https://www.sat.gob.mx/minisitio/header/header.html';
 </script>
 
 <iframe
